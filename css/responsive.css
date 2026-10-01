@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+    .nav { position: fixed; top: 76px; right: 0; left: 0; padding: 20px; border-bottom: 1px solid var(--line); background: var(--cream); transform: translateY(-120%); transition: transform 0.25s ease; }
+    .nav.is-open { transform: translateY(0); }
+    .nav__list { flex-direction: column; gap: 8px; }
+    .nav__link { width: 100%; padding: 12px; text-align: center; }
+    .mobile-menu-btn { display: block; }
+    .about__container, .contact__container { grid-template-columns: 1fr; gap: 44px; }
+    .about__bean { margin: 0 auto; }
+    .review-cards { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px) {
+    .container { width: min(100% - 28px, 560px); }
+    .section { padding: 72px 0; }
+    .header__container { min-height: 66px; }
+    .header__book { display: none; }
+    .nav { top: 66px; }
+    .hero { min-height: calc(100vh - 66px); }
+    .hero__stats { gap: 22px; }
+    .hero__stats strong { font-size: 25px; }
+    .hero__stats span { font-size: 10px; text-align: center; }
+    .cards-grid, .review-cards { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .menu-controls { align-items: stretch; flex-direction: column; }
+    .menu-controls .menu-search, .price-filter { width: 100%; }
+    .special__grid { grid-template-columns: 1fr; }
+    .about__features { grid-template-columns: 1fr; }
+    .footer__container { align-items: flex-start; flex-direction: column; }
+    .modal { padding: 30px 20px; }
+}
+
+@media (max-width: 420px) {
+    .logo { font-size: 18px; }
+    .hero__title { font-size: 48px; }
+    .hero__buttons { align-items: stretch; flex-direction: column; width: 100%; }
+    .hero__buttons .btn { width: 100%; }
+    .hero__stats { gap: 12px; }
+    .card__bottom { align-items: flex-start; flex-direction: column; }
+    .card__btn { width: 100%; }
+}
