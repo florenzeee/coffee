@@ -1,3 +1,9 @@
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 @media (max-width: 900px) {
     .nav { position: fixed; top: 76px; right: 0; left: 0; padding: 20px; border-bottom: 1px solid var(--line); background: var(--cream); transform: translateY(-120%); transition: transform 0.25s ease; }
     .nav.is-open { transform: translateY(0); }
@@ -38,4 +44,6 @@
     .hero__stats { gap: 12px; }
     .card__bottom { align-items: flex-start; flex-direction: column; }
     .card__btn { width: 100%; }
+    .logo span { display: none; }
+    .header__actions { gap: 8px; }
 }
